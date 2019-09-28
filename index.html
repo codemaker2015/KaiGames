@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="imgs/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<title>Kai Games - Vishnu Sivan</title>
+<style>
+body{
+	margin:0;
+	background-color:#369;
+	overflow:hidden;
+	display: flex;
+    flex-direction: column;
+}   
+html, body {
+	height: 100%;
+}
+  
+#btn1{
+	background-image: url(imgs/prod1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+	
+	
+}
+#btn2{
+	background-image: url(imgs/prod2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn3{
+	background-image: url(imgs/prod3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn4{
+	background-image: url(imgs/prod4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+#btn5{
+	background-image: url(imgs/prod5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn6{
+	background-image: url(imgs/prod6.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn7{
+	background-image: url(imgs/prod7.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn8{
+	background-image: url(imgs/prod8.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:960px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#content{
+	background:#369;
+	position: fixed;
+    left: 0;
+    right: 0;    
+	top: 770px;
+    bottom: 0;
+    padding: 1rem;
+	z-index:999; 
+    margin-top: 80px; 
+}
+#content>iframe {
+	width: 100%;
+	height: 100%;
+}
+#backbutton{
+	position:relative;
+	left:760px;
+	cursor:pointer;
+}
+
+#caption{
+	position:relative;
+	top:-60px;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#pagecaption{
+	position:relative;
+	top:-60px;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
+</head>
+
+<body link="#FFFFFF">
+<!--header-->
+<div style="width:100%; height:80px; overflow:hidden; margin: 0 auto; background-color:#333">
+
+  <div style="width:750px; height:80px; margin: 0 auto; overflow:hidden; position:relative">
+		
+        <div id="caption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute">VSoft Technologies </div>
+        <div id="backbutton" style="height:44px; width:44px; margin-top:15px; float:left; position:absolute"> <img src="imgs/backbtn.png" width="44" height="44" /> </div>
+       <div id="pagecaption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> We innovate the new world  </div>
+  </div>
+
+</div>
+
+<!--buttons-->
+<div style="width:calc( 100% - 475px );height:450px;overflow:hidden;margin: 0 auto;position:relative;margin-top: auto;margin-bottom: auto;">
+
+	<a href="maze/maze.html" target="main"><div id="btn1" style="float:left"> <p> Maze </p> </div> </a>
+    <a href="pacman/pacman.html" target="main"><div id="btn2" style="float:left"> <p> PacMan </p> </div> </a>
+    <a href="mario/main.html" target="main"><div id="btn3" style="float:left"> <p> Mario </p> </div> </a>
+    <a href="breakout.html" target="main"><div id="btn4" style="float:left"> <p> BreakOut </p> </div> </a>
+    <a href="pong.html" target="main"><div id="btn5" style="float:left"> <p> Pong </p> </div> </a>
+    <a href="snake.html" target="main"><div id="btn6" style="float:left"> <p> Snake </p> </div> </a>
+    <a href="256/256.html" target="main"><div id="btn7" style="float:left"> <p> 256 </p> </div> </a>
+    <a href="hextris/index.html" target="main"><div id="btn8" style="float:left"> <p> Hextris </p> </div> </a>
+	
+	
+	
+</div>
+
+<div id="content" style="position:absolute"> <iframe name="main" frameborder=0 ></iframe>  </div>
+    
+
+<!--footer-->
+<div style="FONT-VARIANT: JIS04;width:100%;height: 30px;overflow:hidden;margin: 0 auto;background-color:#333;margin-top:20px;position: fixed;bottom: 0;">
+    <div style="width:750px; height:80px; margin: 0 auto;">
+    <p style="text-align:center; color:#FFF; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small"><a href="http://www.github.com/codemaker2015">VSoft Technologies</a> &copy; 2019 All rights reserved. </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TweenLite.to($("#caption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
+  TweenLite.to($("#btn1"),2,{css:{left:0},delay:2, ease:Power2.easeOut});
+  TweenLite.to($("#btn2"),2,{css:{left:20},delay:2.5, ease:Power2.easeOut});
+  TweenLite.to($("#btn3"),2,{css:{left:40},delay:3, ease:Power2.easeOut});
+  TweenLite.to($("#btn4"),2,{css:{left:60},delay:3.5, ease:Power2.easeOut});
+  TweenLite.to($("#btn5"),2,{css:{left:0},delay:4, ease:Power2.easeOut});
+  TweenLite.to($("#btn6"),2,{css:{left:20},delay:4.5, ease:Power2.easeOut});
+  TweenLite.to($("#btn7"),2,{css:{left:40},delay:5, ease:Power2.easeOut});
+  TweenLite.to($("#btn8"),2,{css:{left:60},delay:5.5, ease:Power2.easeOut});
+  
+  });
+  
+  $("#btn1").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Maze");
+	 
+  });
+  
+  $("#btn2").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("PacMan");
+	 
+  });
+  
+  $("#btn3").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Mario");
+	 
+  });
+  
+  $("#btn4").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("BreakOut");
+	 
+  });
+  
+  $("#btn5").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Pong");
+	 
+  });
+  
+  $("#btn6").click(function(){
+	TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	$("#pagecaption").text("Snake");
+   
+});
+$("#btn7").click(function(){
+	TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	$("#pagecaption").text("256");
+   
+});
+$("#btn8").click(function(){
+	TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	$("#pagecaption").text("Hextris");
+});
+  
+  
+   $("#backbutton").click(function(){
+	    TweenLite.to($("#content"),1,{css:{top:770}, ease:Power2.easeIn});
+		TweenLite.to($("#backbutton"),1,{css:{left:760, rotation:0}, ease:Power2.easeIn});
+		TweenLite.to($("#pagecaption"),1,{css:{top:-60}, ease:Power2.easeOut});
+		TweenLite.to($("#caption"),1,{css:{top:0}, ease:Power2.easeOut});
+	});   
+</script>	
+
+</body>
+</html>
